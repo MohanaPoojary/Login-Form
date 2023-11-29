@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+body {
+  background-color: #f0f0f0; /* Set a background color for the entire page */
+}
+
+
+.login-form {
+  background-color: #fff; /* Set a background color for the login form */
+  border-radius: 8px; /* Add rounded corners for a modern look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  padding: 20px; /* Add some padding to the form */
+  max-width: 200px; /* Set a maximum width to prevent the form from becoming too wide */
+  margin: 50px auto; /* Center the form on the page */
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
