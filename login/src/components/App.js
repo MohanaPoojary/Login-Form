@@ -1,11 +1,11 @@
+// App.js
 import './App.css';
-import Header from './Header';
-import Login from './Login';
+import Routes from './Routes';
+
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Login/>
+      <Routes />
     </div>
   );
 }

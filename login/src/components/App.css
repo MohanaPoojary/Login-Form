@@ -29,12 +29,12 @@
 }
 
 body {
-  background-color: #f0f0f0; /* Set a background color for the entire page */
+  background-color: #5f5858; /* Set a background color for the entire page */
 }
 
 
 .login-form {
-  background-color: #fff; /* Set a background color for the login form */
+  background-color: #f0e4e4; /* Set a background color for the login form */
   border-radius: 8px; /* Add rounded corners for a modern look */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
   padding: 20px; /* Add some padding to the form */
