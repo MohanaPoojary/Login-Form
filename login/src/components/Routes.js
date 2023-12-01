@@ -1,18 +1,20 @@
 // Routes.js
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login';
 import Signup from './Signup';
 
-const Routes = () => {
+const AppRoutes = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Login} />
-        <Route path="/signup" component={Signup} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/Login" element={<Login />} />
+
+      </Routes>
     </Router>
   );
 };
 
-export default Routes;
+export default AppRoutes;
