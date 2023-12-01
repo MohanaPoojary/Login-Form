@@ -7,6 +7,8 @@ const Login = () => {
         password: '',
     });
 
+const [error, setError] = useState('')
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -15,8 +17,16 @@ const Login = () => {
         });
     };
 
+    
+
     const handleSignIn = () => {
         // You can perform actions here with the form data, such as sending it to a server
+        if (!formData.username || !formData.password) {
+            setError('Please fill in both username and password.');
+            return;
+        }
+
+        setError('')
         console.log('Form Data:', formData);
     };
 
@@ -46,6 +56,7 @@ const Login = () => {
                     />
                 </div>
                 <br />
+                {error && <div style={{ color: 'red'}}>{error}</div>}
                 <div>
                     <button type="button" onClick={handleSignIn}>
                         Sign in
